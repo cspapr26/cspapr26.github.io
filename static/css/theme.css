@@ -1,13 +1,34 @@
 :root {
-  --primary-color: #00ced1 !important; 
-  --secondary-color: #20b2aa !important;
-  --background-color: #222225 !important;
-  --font-color: #ffffff !important;
-  /* Fix links and prompts */
+  /* Force these variables to win */
+  --primary-color: #00ced1 !important;
+  --secondary-color: #00ced1 !important; /* Make secondary elements Teal too */
+  --font-color: #00ced1 !important;      /* Make standard text Teal */
+  --background-color: #000000 !important; /* Pure Black background */
   --link-color: #00ced1 !important;
 }
 
-/* Force override for specific elements */
-h1, h2, h3, a, .terminal-prompt, .terminal-nav a {
-    color: var(--primary-color) !important;
+/* 1. Force Body and Text */
+body {
+    background-color: #000000 !important;
+    color: #00ced1 !important;
+}
+
+/* 2. Catch all text elements (Paragraphs, Lists, Spans) */
+p, li, span, div, strong, em {
+    color: #00ced1 !important;
+}
+
+/* 3. Catch the Lines (Horizontal Rules) */
+hr {
+    border-color: #00ced1 !important;
+    color: #00ced1 !important;
+    background-color: #00ced1 !important; 
+}
+
+/* 4. Catch the Dots (Separators) */
+.terminal-prompt::after,
+.terminal-prompt::before,
+.terminal-nav::before,
+.terminal-nav::after {
+    color: #00ced1 !important;
 }
