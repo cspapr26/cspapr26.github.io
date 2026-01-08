@@ -1,10 +1,9 @@
 +++
 title = "About"
-date = 2024-01-01
 draft = false
 +++
 
-# Identity Verified: Chowdhary Sai Praveen
+# Chowdhary Sai Praveen
 > Cybersecurity Professional | SOC Analyst | Incident Response | Threat hunter
 > **Location:** Washington, United States
 
