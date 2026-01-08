@@ -8,6 +8,8 @@ paginate = 5
     path = "github.com/panr/hugo-theme-terminal/v4"
 
 [params]
+  customCSS = ["css/theme.css"]
+
   # FORCE COLOR HERE
   themeColor = "green"
   fullWidthTheme = false
