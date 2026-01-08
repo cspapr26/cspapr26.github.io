@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #00ced1; /* Teal */
+  --secondary-color: #20b2aa;
+  --background-color: #222225;
+  --font-color: #ffffff;
+}
+/* Force override */
+h1, h2, h3, a, .terminal-prompt {
+    color: var(--primary-color) !important;
+}
