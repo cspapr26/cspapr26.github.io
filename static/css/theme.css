@@ -1,10 +1,13 @@
 :root {
-  --primary-color: #00ced1; /* Teal */
-  --secondary-color: #20b2aa;
-  --background-color: #222225;
-  --font-color: #ffffff;
+  --primary-color: #00ced1 !important; 
+  --secondary-color: #20b2aa !important;
+  --background-color: #222225 !important;
+  --font-color: #ffffff !important;
+  /* Fix links and prompts */
+  --link-color: #00ced1 !important;
 }
-/* Force override */
-h1, h2, h3, a, .terminal-prompt {
+
+/* Force override for specific elements */
+h1, h2, h3, a, .terminal-prompt, .terminal-nav a {
     color: var(--primary-color) !important;
 }
