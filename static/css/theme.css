@@ -1,36 +1,53 @@
 :root {
-  /* 1. Define the Colors */
-  --primary-color: #00ced1 !important;   /* Teal */
-  --secondary-color: #00ced1 !important; /* Teal */
-  --background-color: #000000 !important; /* PURE BLACK */
-  --font-color: #00ced1 !important;      /* Teal */
-  --heading-color: #00ced1 !important;   /* Teal */
+  --primary-color: #00ced1 !important;
+  --secondary-color: #00ced1 !important;
+  --background-color: #000000 !important;
+  --font-color: #00ced1 !important;
+  --heading-color: #00ced1 !important;
+  --link-color: #00ced1 !important;
 }
 
-/* 2. Force Background to Black */
+/* 1. Global Reset - Force Black & Teal */
 html, body {
     background-color: #000000 !important;
     color: #00ced1 !important;
 }
 
-/* 3. Force ALL Text to Teal */
-p, li, span, div, a, strong, b, em {
+/* 2. Text Elements */
+p, li, span, div, a, strong, b, em, h1, h2, h3, h4, h5, h6 {
     color: #00ced1 !important;
 }
 
-/* 4. Force Lines (HR) to Teal */
+/* 3. The "Terminal" Logo Box (Top Left) */
+.logo, .terminal-logo {
+    background-color: #00ced1 !important; /* The box background */
+    color: #000000 !important;             /* The text inside the box */
+}
+
+/* 4. The Vertical Lines (|||||||) and Menu */
+.terminal-menu, .terminal-nav, nav {
+    color: #00ced1 !important;
+}
+.terminal-menu::before, .terminal-menu::after {
+    color: #00ced1 !important;
+}
+
+/* 5. Horizontal Lines (Separators) */
 hr {
     background-color: #00ced1 !important;
     border-color: #00ced1 !important;
+    color: #00ced1 !important;
     opacity: 1 !important;
 }
 
-/* 5. Force the "::" dots and prompts */
-.terminal-prompt::after,
-.terminal-prompt::before,
-.terminal-nav::before,
-.terminal-nav::after,
-.title::before,
-.title::after {
+/* 6. Links in the Header */
+header a, nav a {
     color: #00ced1 !important;
+    text-decoration-color: #00ced1 !important;
+}
+
+/* 7. Selection (When you highlight text) */
+::selection {
+    background: #00ced1 !important;
+    color: #000000 !important;
 }
