@@ -8,8 +8,8 @@ paginate = 5
     path = "github.com/panr/hugo-theme-terminal/v4"
 
 [params]
-  # Theme Customization
-  themeColor = "green"  # options: orange, blue, red, green, pink
+# Theme Customization
+  themeColor = "green"
   fullWidthTheme = false
   centerTheme = false
   contentTypeName = "posts"
