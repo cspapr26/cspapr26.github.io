@@ -8,7 +8,7 @@ paginate = 5
     path = "github.com/panr/hugo-theme-terminal/v4"
 
 [params]
-# Theme Customization
+  # FORCE COLOR HERE
   themeColor = "green"
   fullWidthTheme = false
   centerTheme = false
@@ -17,13 +17,14 @@ paginate = 5
 
 [languages.en]
   title = "0xcsp23"
-  subtitle = "Cybersecurity Analyst | Network Defense"
+  subtitle = "Cybersecurity Analyst"
   menuMore = "Show more"
 
 [[menu.main]]
   identifier = "about"
   name = "About"
   url = "/about"
+
 [[menu.main]]
   identifier = "projects"
   name = "Projects"
