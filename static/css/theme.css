@@ -1,34 +1,36 @@
 :root {
-  /* Force these variables to win */
-  --primary-color: #00ced1 !important;
-  --secondary-color: #00ced1 !important; /* Make secondary elements Teal too */
-  --font-color: #00ced1 !important;      /* Make standard text Teal */
-  --background-color: #000000 !important; /* Pure Black background */
-  --link-color: #00ced1 !important;
+  /* 1. Define the Colors */
+  --primary-color: #00ced1 !important;   /* Teal */
+  --secondary-color: #00ced1 !important; /* Teal */
+  --background-color: #000000 !important; /* PURE BLACK */
+  --font-color: #00ced1 !important;      /* Teal */
+  --heading-color: #00ced1 !important;   /* Teal */
 }
 
-/* 1. Force Body and Text */
-body {
+/* 2. Force Background to Black */
+html, body {
     background-color: #000000 !important;
     color: #00ced1 !important;
 }
 
-/* 2. Catch all text elements (Paragraphs, Lists, Spans) */
-p, li, span, div, strong, em {
+/* 3. Force ALL Text to Teal */
+p, li, span, div, a, strong, b, em {
     color: #00ced1 !important;
 }
 
-/* 3. Catch the Lines (Horizontal Rules) */
+/* 4. Force Lines (HR) to Teal */
 hr {
+    background-color: #00ced1 !important;
     border-color: #00ced1 !important;
-    color: #00ced1 !important;
-    background-color: #00ced1 !important; 
+    opacity: 1 !important;
 }
 
-/* 4. Catch the Dots (Separators) */
+/* 5. Force the "::" dots and prompts */
 .terminal-prompt::after,
 .terminal-prompt::before,
 .terminal-nav::before,
-.terminal-nav::after {
+.terminal-nav::after,
+.title::before,
+.title::after {
     color: #00ced1 !important;
 }
